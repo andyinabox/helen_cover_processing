@@ -1,0 +1,17 @@
+{
+  "name": "helen_cover_processing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "data": "npm run get-data; npm run get-constants; npm run clean-data;",
+    "get-data": "helen data only_annotations_sizes > data/data.json",
+    "get-constants": "helen constants > data/constants.json",
+    "clean-data": "node scripts/clean-data.js"
+  },
+  "author": "Andy Dayton <amdayton@gmail.com> (http://andydayton.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "helen": "andyinabox/helen-shared"
+  }
+}
