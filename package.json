@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "data": "npm run get-data; npm run get-constants; npm run clean-data;",
-    "get-data": "helen data only_annotations_sizes > data/data.json",
+    "get-data": "helen data normalized > data/data.json",
     "get-constants": "helen constants > data/constants.json",
-    "clean-data": "node scripts/clean-data.js"
+    "clean-data": "node scripts/clean-data.js data.json; node scripts/clean-data.js constants.json"
   },
   "author": "Andy Dayton <amdayton@gmail.com> (http://andydayton.com/)",
   "license": "ISC",
